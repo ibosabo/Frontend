@@ -1,0 +1,241 @@
+.AnketContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 4px;
+  }
+  
+  .Anketfirstheader {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .AnketCreate {
+    background-color: #fff;
+    color: #383b3d;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .AnketCreate:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .AnketYönetimSayfasi {
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    
+    
+  }
+  .AnketShareButton {
+    display: inline-block;
+    padding: 6px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1px;
+  }
+  
+.AnketProcess{
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.DeleteButton {
+  position: relative;
+  background-color: rgb(157, 39, 65);
+  border-radius: 5px;
+  box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 40px;
+  height: 20px;
+  color: #fff;
+  border: 2px solid;
+  font-size: 10px;
+  z-index: 1;
+  overflow: 2.415px;
+  cursor: pointer;
+}
+
+.DeleteButton::before {
+  content: "Sil";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.UpdateButton {
+  position: relative;
+  background-color: rgb(48, 36, 82);
+  border-radius: 5px;
+  box-shadow: rgb(34, 10, 90) 0px 4px 0px 0px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 60px;
+  height: 20px;
+  color: #fff;
+  border: 2px solid;
+  font-size: 10px;
+  z-index: 1;
+  overflow: 2.415px;
+  cursor: pointer;
+}
+
+.UpdateButton::before {
+  content: "Güncelle";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.AnketEnd{
+  position: absolute;
+  top: 80%;
+  left: 74%;
+  background-color: rgb(48, 36, 82);
+  color: #fff;
+  border-radius: 4px;
+  height: 40px;
+  
+}
+
+.SendAnswer{
+  background-color: rgb(48, 36, 82);
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 70px;
+  height: 32px;
+  color: #fff;
+  border: 2px solid;
+  font-size: 10px;
+  cursor: pointer;
+}
+.ShowAnswer{
+  background-color: rgb(7, 66, 75);
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 80px;
+  height: 42.8px;
+  color: #fff;
+  border: 2px solid;
+  font-size: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left:79.3%;
+}
+.Numberofquestions{
+  color: rgb(47, 40, 40);
+  font-size:30px;
+}
+.Input {
+  padding:8px;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #ffffff,
+     -20px -20px 60px #ffffff;
+
+ }
+ .Input:focus {
+  outline-color: #fff1f1;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5,
+     inset -20px -20px 60px #ffffff;
+ }
+ .Gösterileceksoru {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+ 
+}
+@media only screen and (max-width: 600px) {
+  .AnketContainer {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0.5rem;
+  }
+  
+  .Anketfirstheader {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  }
+  
+  .AnketCreate {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  }
+  
+  .AnketYönetimSayfasi {
+  font-size: 0.8rem;
+  }
+  
+  .AnketShareButton {
+  font-size: 8px;
+  padding: 4px 4px;
+  margin-top: 0.5rem;
+  }
+  
+  .AnketProcess{
+  margin-top: 2px;
+  }
+  
+  .DeleteButton, .UpdateButton {
+  font-size: 8px;
+  width: 50%;
+  height: 25px;
+  margin-top: 0.5rem;
+  }
+  
+  .AnketEnd{
+  position: static;
+  margin-top: 1rem;
+  }
+  
+  .SendAnswer{
+    font-size: 12px;
+    width: 50%;
+    height: 25px;
+    margin-top: 0.5rem;
+  }
+  
+  .ShowAnswer {
+  font-size: 14px;
+  width: 45%;
+  height: 35px;
+  margin-top: 0.5rem;
+  position: static;
+  margin-top: 1rem;
+  }
+  
+  .Numberofquestions{
+  font-size: 20px;
+  }
+  
+  .Input {
+  padding: 6px;
+  font-size: 0.8rem;
+  }
+  
+  .Gösterileceksoru {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  }
+  }
+  
